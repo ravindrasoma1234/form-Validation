@@ -15,45 +15,55 @@
 
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel='stylesheet' href='https://codepen.io/P1N2O/pen/xxbjYqx.css'>
     <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
     <div class="container"><br>
-
-        <div class="col-lg-8 d-block form">
-            <h1 class="text-success text-center">Form Validation in JavaScript</h1><br>
-            <form action="#" onclick="return validation()" class="m-auto">
-                <div class="form-group">
-                    <label>User Name</label>
-                    <input type="text" id="user" class="form-control">
-                    <span id="username" class="text-danger"><b></b></span>
-                </div>
-                <div class="form-group">
-                    <label>Password</label>
-                    <input type="text" id="pass" class="form-control">
-                    <span id="password" class="text-danger"></span>
-                </div>
-                <div class="form-group">
-                    <label> Conform Password</label>
-                    <input type="text" id="conpass" class="form-control">
-                    <span id="conformpassword" class="text-danger"></span>
-                </div>
-                <div class="form-group">
-                    <label>Mobile Number</label>
-                    <input type="text" id="mobileNumber" class="form-control">
-                    <span id="mNumber" class="text-danger"></span>
-                </div>
-                <div class="form-group">
-                    <label> Email</label>
-                    <input type="text" id="email" class="form-control">
-                    <span id="emailid" class="text-danger"></span>
-                </div>
-                <br>
-                <input type="submit" value="submit" name="submit" class="btn btn-success">
-            </form>
+        <h1 class="text-center" style="color: rgb(0, 6, 10);">Form Validation in JavaScript</h1><br>
+        <div class="col-lg-10 d-block">
+            <div
+                style="margin-left: 30%; border: 2px dashed black; padding: 30px; border-top-right-radius: 10%;border-bottom-left-radius: 10%;">
+                <form action="#" onclick="return validation()" class="m-auto">
+                    <div class="form-group">
+                        <label>User Name</label>
+                        <input type="text" id="user" class="form-control">
+                        <span id="username" class="text-danger"><b></b></span>
+                    </div>
+                    <div class="form-group">
+                        <label>Password</label>
+                        <input type="text" id="pass" class="form-control">
+                        <span id="password" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label> Conform Password</label>
+                        <input type="text" id="conpass" class="form-control">
+                        <span id="conformpassword" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label>Mobile Number</label>
+                        <input type="text" id="mobileNumber" class="form-control">
+                        <span id="mNumber" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label> Email</label>
+                        <input type="text" id="email" class="form-control">
+                        <span id="emailid" class="text-danger"></span>
+                    </div>
+                    <br>
+                    <input type="submit" value="submit" name="submit" class="btn btn-success">
+                </form>
+            </div>
         </div>
     </div>
+
+
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/js/all.min.js"
+        integrity="sha256-qM7QTJSlvtPSxVRjVWNM2OfTAz/3k5ovHOKmKXuYMO4=" crossorigin="anonymous"></script>
+    partial
+
+    <script src="./script.js"></script> -->
 
     <script>
         function validation() {
