@@ -17,6 +17,7 @@
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <link rel='stylesheet' href='https://codepen.io/P1N2O/pen/xxbjYqx.css'>
+    <!-- <link rel="stylesheet" href="./bootstrap.css"> -->
     <link rel="stylesheet" href="./style.css">
 </head>
 
@@ -27,27 +28,27 @@
                 <h1 class="text-center">Form Validation in JavaScript</h1><br>
                 <div class="form-group">
                     <label>User Name</label>
-                    <input type="text" id="user" class="form-control">
+                    <input type="text" id="user" class="form-control" autocomplete="off">
                     <span id="username" style="color: yellow;"><b></b></span>
                 </div>
                 <div class="form-group">
                     <label>Password</label>
-                    <input type="text" id="pass" class="form-control">
+                    <input type="text" id="pass" class="form-control" autocomplete="off">
                     <span id="password" style="color: yellow;"></span>
                 </div>
                 <div class="form-group">
                     <label> Conform Password</label>
-                    <input type="text" id="conpass" class="form-control">
+                    <input type="text" id="conpass" class="form-control" autocomplete="off">
                     <span id="conformpassword" style="color: yellow;"></span>
                 </div>
                 <div class="form-group">
                     <label>Mobile Number</label>
-                    <input type="text" id="mobileNumber" class="form-control">
+                    <input type="text" id="mobileNumber" class="form-control" autocomplete="off">
                     <span id="mNumber" style="color: yellow;"></span>
                 </div>
                 <div class="form-group">
                     <label> Email</label>
-                    <input type="text" id="email" class="form-control">
+                    <input type="text" id="email" class="form-control" autocomplete="off">
                     <span id="emailid" style="color: yellow;"></span>
                 </div>
                 <br>
@@ -84,6 +85,9 @@
             if ((user.length <= 2) || (user.length > 20)) {
                 document.getElementById("username").innerHTML = " ** user lenght must be between 3 to 20."
             }
+            if ((user.length > 2) || (user.length <= 20)) {
+                document.getElementById("username").innerHTML = ""
+            }
             if (!isNaN(user)) {
                 document.getElementById("username").innerHTML = " ** only character are allowed"
                 return false;
@@ -98,20 +102,28 @@
                 document.getElementById("password").innerHTML = " ** Please fill the password feild";
                 return false;
             }
+
             if ((pass.length <= 7) || (pass.length > 15)) {
                 document.getElementById("password").innerHTML = " ** password lenght must be between 8 to 15."
                 return false;
             }
 
 
+
             if (conpass == "") {
                 document.getElementById("conformpassword").innerHTML = " ** Please fill the Conform Password feild";
                 return false;
             }
+
             if (pass != conpass) {
                 document.getElementById("conformpassword").innerHTML = " ** password are not matching."
                 return false;
             }
+            // } else {
+            //     document.getElementById("conformpassword").innerHTML = "Password are matched";
+            //     document.getElementById("conformpassword").style.color = "green"
+            //     return true;
+            // }
 
 
             if (mobileNumber == "") {
