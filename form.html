@@ -17,6 +17,7 @@
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <link rel='stylesheet' href='https://codepen.io/P1N2O/pen/xxbjYqx.css'>
+
     <!-- <link rel="stylesheet" href="./bootstrap.css"> -->
     <link rel="stylesheet" href="./style.css">
 </head>
@@ -96,8 +97,6 @@
 
 
 
-
-
             if (pass == "") {
                 document.getElementById("password").innerHTML = " ** Please fill the password feild";
                 return false;
@@ -119,11 +118,6 @@
                 document.getElementById("conformpassword").innerHTML = " ** password are not matching."
                 return false;
             }
-            // } else {
-            //     document.getElementById("conformpassword").innerHTML = "Password are matched";
-            //     document.getElementById("conformpassword").style.color = "green"
-            //     return true;
-            // }
 
 
             if (mobileNumber == "") {
@@ -138,6 +132,8 @@
                 document.getElementById("mNumber").innerHTML = " ** mobile number must be write 10 digits number";
                 return false;
             }
+
+
 
             if (email == "") {
                 document.getElementById("emailid").innerHTML = " ** Please fill the Email feild";
